@@ -7,7 +7,7 @@ String prefix with r, it tells python not to handle back slashes(\)
 . ^ $ * + ? { } [ ] \ | ( )
 
 ## Most Used
-.          -  Any Character Except New Line
+.&emsp;          -  Any Character Except New Line\n
 \d         -  Digit (0-9)
 \D         -  NOT a Digit (0-9)
 \w         -  Word Character (a-z, A-Z, 0-9, _)
