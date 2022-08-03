@@ -56,9 +56,10 @@ M(s|r|rs)\.?\s?[A-Z]\w*
 6. matching 0 or More Words
 
 ### Using Groups to match and replace
+Below is the best way to write a pattern if we want to do some actions(replace/show etc.,) with the matched groups
 ```bash 
 '''
-https://www.etTime.io
+https://www.getTime.io
 https://TempLogger.com
 https://hsmgowtham.me
 '''
@@ -67,7 +68,7 @@ Pattern to match the above
 ```bash
 https?:\/\/(www\.)?(\w+)(\.\w+)
 ```
-Pattern to replace the above with only domain name and top level domain name
+Pattern to replace the above with only domain name and top level domain name(ex: getTime.io, TempLogger.com, hsmgowtham.me etc.,)
 ```bash
 $2$3
 ```
