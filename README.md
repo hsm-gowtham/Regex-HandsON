@@ -4,7 +4,7 @@ String prefix with r, it tells python not to handle back slashes(\)
 
 
 ## MetaCharacters (needs to escaped):
-. ^ $ * + ? { } [ ] \ | ( )
+. ^ $ * + ? { } [ ] \ / | ( )
 
 ## Most Used
 ```bash
@@ -41,8 +41,12 @@ Mr. Sensei Hang
 Mrs. Sensei
 Mr.Bang
 '''
-pattern to match above words:  M(s|r|rs)\.?\s?[A-Z]\w*
 ```
+pattern to match above words: 
+```bash
+M(s|r|rs)\.?\s?[A-Z]\w*
+``` 
+
 #### Explanation:
 1. M to match 1st letter
 2. Using group to match s or r or rs
@@ -51,7 +55,22 @@ pattern to match above words:  M(s|r|rs)\.?\s?[A-Z]\w*
 5. matching 1 capital letter
 6. matching 0 or More Words
 
-
+### Using Groups to match and replace
+```bash 
+'''
+https://www.etTime.io
+https://TempLogger.com
+https://hsmgowtham.me
+'''
+```
+Pattern to match the above
+```bash
+https?:\/\/(www\.)?(\w+)(\.\w+)
+```
+Pattern to replace the above with only domain name and top level domain name
+```bash
+$2$3
+```
 # Regex Using Python
 ### re module
 re.compile method allows us to separate out our patterns to variables and  also make it easier to make use of that variable to perform variable searches
