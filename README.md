@@ -24,6 +24,27 @@ $          -  Ending of a String
 |          -  Either Or
 ```
 
+## Quantifiers
+```bash
+*          -  0 or More
++          -  1 or More
+?          -  0 or One
+{3}        -  Exact Number
+{3,4}      -  Range of Numbers (Minimum, Maximum)
+```
+
+### Quick Example
+```bash
+'''
+Ms. Marvel
+Mr. Sensei Hang
+Mrs. Sensei
+Mr.Bang
+
+pattern to match above words:  M(s|r|rs)\.?\s?[A-Z]\w*
+'''
+```
+
 # Regex Using Python
 ### re module
 re.compile method allows us to separate out our patterns to variables and  also make it easier to make use of that variable to perform variable searches
