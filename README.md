@@ -40,10 +40,17 @@ Ms. Marvel
 Mr. Sensei Hang
 Mrs. Sensei
 Mr.Bang
-
-pattern to match above words:  M(s|r|rs)\.?\s?[A-Z]\w*
 '''
+pattern to match above words:  M(s|r|rs)\.?\s?[A-Z]\w*
 ```
+#### Explanation:
+1. M to match 1st letter
+2. Using group to match s or r or rs
+3. matching 0 or 1 dot
+4. matching 0 or 1 space
+5. matching 1 capital letter
+6. matching 0 or More Words
+
 
 # Regex Using Python
 ### re module
