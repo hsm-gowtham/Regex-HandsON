@@ -7,7 +7,8 @@ String prefix with r, it tells python not to handle back slashes(\)
 . ^ $ * + ? { } [ ] \ | ( )
 
 ## Most Used
-.&emsp;          -  Any Character Except New Line\n
+```bash
+.          -  Any Character Except New Line
 \d         -  Digit (0-9)
 \D         -  NOT a Digit (0-9)
 \w         -  Word Character (a-z, A-Z, 0-9, _)
@@ -21,6 +22,7 @@ $          -  Ending of a String
 []         -  Matches Characters in brackets
 [^ ]       -  Matches Characters NOT in brackets
 |          -  Either Or
+```
 
 # Regex Using Python
 ### re module
